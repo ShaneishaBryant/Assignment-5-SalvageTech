@@ -20,5 +20,16 @@ class StorageBay {
 
 
     }
-
+    //method for displaying storage pods
+    public void displayManifest() {
+        System.out.println("===STORAGE BAY INVENTORY===");
+        //for each loop to iterate through array
+        for (CargoPod pod : pods) {
+            if (pod != null) {
+                System.out.println("Pod " + pod.getId() + ": " +  " [" + pod.getContents() + "]");
+            }else {
+                System.out.println("[NO CONTENTS]");
+            }
+        }
+    }
 }

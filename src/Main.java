@@ -9,5 +9,11 @@ public class Main {
         //instantiate SpaceSuit
         SpaceSuit suit = new SpaceSuit();
         System.out.println("Spacesuit has been successfully initialized.");
+
+        //calling displayManifest()
+        bay.displayManifest();
+
     }
+
+
 }
